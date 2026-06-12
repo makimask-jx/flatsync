@@ -5,6 +5,8 @@ import express, {
   type NextFunction,
 } from "express";
 
+import sql from "./db.js";
+
 const app: Express = express();
 const port = 3000;
 const loggerMiddleware = (req: Request, res: Response, next: NextFunction) => {
